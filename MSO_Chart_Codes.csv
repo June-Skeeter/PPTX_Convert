@@ -1,0 +1,75 @@
+Value,Description,Type
+-4098,3D Area.,
+78,3D Stacked Area.,
+79,100% Stacked Area.,
+60,3D Clustered Bar.,Bar
+61,3D Stacked Bar.,Bar
+62,3D 100% Stacked Bar.,Bar
+-4100,3D Column.,Bar
+54,3D Clustered Column.,Bar
+55,3D Stacked Column.,Bar
+56,3D 100% Stacked Column.,Bar
+-4101,3D Line.,
+-4102,3D Pie.,
+70,Exploded 3D Pie.,
+1,Area,
+76,Stacked Area.,
+77,100% Stacked Area.,
+57,Clustered Bar.,Bar
+71,Bar of Pie.,
+58,Stacked Bar.,Bar
+59,100% Stacked Bar.,Bar
+15,Bubble.,
+87,Bubble with 3D effects.,
+51,Clustered Column.,Bar
+52,Stacked Column.,Bar
+53,100% Stacked Column.,Bar
+102,Clustered Cone Bar.,Bar
+103,Stacked Cone Bar.,Bar
+104,100% Stacked Cone Bar.,Bar
+105,3D Cone Column.,Bar
+99,Clustered Cone Column.,Bar
+100,Stacked Cone Column.,Bar
+101,100% Stacked Cone Column.,Bar
+95,Clustered Cylinder Bar.,Bar
+96,Stacked Cylinder Bar.,Bar
+97,100% Stacked Cylinder Bar.,Bar
+98,3D Cylinder Column.,Bar
+92,Clustered Cone Column.,Bar
+93,Stacked Cone Column.,Bar
+94,100% Stacked Cylinder Column.,Bar
+-4120,Doughnut.,
+80,Exploded Doughnut.,
+4,Line.,Scatter_Lines
+65,Line with Markers.,Scatter_Lines
+66,Stacked Line with Markers.,Scatter_Lines
+67,100% Stacked Line with Markers.,Scatter_Lines
+63,Stacked Line.,Line
+64,100% Stacked Line.,Line
+5,Pie.,Pie
+69,Exploded Pie.,Pie
+68,Pie of Pie.,Pie
+109,Clustered Pyramid Bar.,Bar
+110,Stacked Pyramid Bar.,Bar
+111,100% Stacked Pyramid Bar.,Bar
+112,3D Pyramid Column.,Bar
+106,Clustered Pyramid Column.,Bar
+107,Stacked Pyramid Column.,Bar
+108,100% Stacked Pyramid Column.,Bar
+-4151,Radar.,
+82,Filled Radar.,
+81,Radar with Data Markers.,
+140,Map chart.,
+88,High-Low-Close.,
+89,Open-High-Low-Close.,
+90,Volume-High-Low-Close.,
+91,Volume-Open-High-Low-Close.,
+83,3D Surface.,
+85,Surface (Top View).,
+86,Surface (Top View wireframe).,
+84,3D Surface (wireframe).,
+-4169,Scatter.,Scatter
+74,Scatter with Lines.,Scatter_Lines
+75,Scatter with Lines and No Data Markers.,Scatter_Lines
+72,Scatter with Smoothed Lines.,Scatter_Lines
+73,Scatter with Smoothed Lines and No Data Markers.,Scatter_Lines

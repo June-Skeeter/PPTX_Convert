@@ -14,6 +14,18 @@ QMD_Head = '''---
 format:
   revealjs:
     theme: THEME
+    scrollable: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+    footer: <a href="index.html">Back to Homepage</a>
+jupyter: python3
+title: TITLE
+subtitle: SUBTITLE
 ---
 
 {{< include _imports.qmd >}}
@@ -258,13 +270,13 @@ class Parse():
         try:
             self.type = shape.image.ext.lower()
             self.image = Image.open(io.BytesIO(shape.image.blob))
-            root = f"{self.dir}images/{self.LN}"
+            root = f"{self.dir}images/"
             Path(root).mkdir(parents=True, exist_ok=True)
             if self.type!='jpg' and self.type!='png' and self.type!='gif':
                 self.image = self.image.convert('RGB')
-                self.fn = f"{root}/{name}.jpg"
+                self.fn = f"{root}{self.LN}_{name}.jpg"
             else:
-                self.fn = f"{root}/{name}.{self.type}"
+                self.fn = f"{root}{self.LN}_{name}.{self.type}"
             if self.image.size[0] > self.maxdim and self.image.size[1]<self.image.size[0]:
                 wpercent = (self.maxdim/float(self.image.size[0]))
                 hsize = int((float(self.image.size[1])*float(wpercent)))
@@ -280,9 +292,9 @@ class Parse():
             return(f'Failed to Render:{shape_Name}')
         
     def MakeTable(self,shape,name):
-        root = f"{self.dir}Data/{self.LN}"
+        root = f"{self.dir}Data/"
         Path(root).mkdir(parents=True, exist_ok=True)
-        self.fn = f"{root}/{name}_Table.csv"
+        self.fn = f"{root}{self.LN}_{name}_Table.csv"
         data = shape.table
         table = {}
         for i,row in enumerate(data.rows):
@@ -302,9 +314,9 @@ class Parse():
         self.part = shape.chart_part
         self.type = self.chart_codes.loc[self.chart_codes['Value']==self.chart.chart_type,'Type'].values[0]
 
-        root = f"{self.dir}Data/{self.LN}"
+        root = f"{self.dir}Data"
         Path(root).mkdir(parents=True, exist_ok=True)
-        self.fn = f"{root}/{name}_{self.type}.csv"
+        self.fn = f"{root}/{self.LN}_{name}_{self.type}.csv"
         self.formatTable()
         self.Data_Text += '\n\n' +self.Fig_Traces.replace('FN',self.relDir(self.fn)).replace('LABEL',name)
 
